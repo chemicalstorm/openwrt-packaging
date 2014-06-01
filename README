@@ -1,0 +1,16 @@
+This is an OpenWrt package feed containing my custom packages.
+
+To use these packages, add the following line to the feeds.conf
+in the OpenWrt buildroot:
+
+  src-git chemicalstorm http://git.chemicalstorm.org/cgit.cgi/openwrt-packaging/
+  
+Update the feed:
+
+  ./scripts/feeds update chemicalstorm
+  
+Activate the package:
+
+  ./scripts/feeds install -a -p chemicalstorm
+  
+The packages should now appear in menuconfig.
